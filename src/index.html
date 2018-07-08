@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #viewport {
+      background: #000;
+      width: 400px;
+      height: 240px;
+      position: relative;
+    }
+    #viewport > * {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="viewport">
+    <canvas id="background-layer" width="400" height="240"></canvas>
+    <canvas id="ui-layer" width="400" height="240"></canvas>
+    <canvas id="sprite-layer" width="400" height="240"></canvas>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

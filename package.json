@@ -1,0 +1,28 @@
+{
+  "name": "rpg-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "tsc",
+    "build": "npm run copy-assets && npm run build-ts",
+    "copy-assets": "./scripts/copy-assets.sh",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhurkes/rpg-board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhurkes/rpg-board/issues"
+  },
+  "homepage": "https://github.com/rhurkes/rpg-board#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
