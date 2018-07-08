@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-ts": "tsc",
-    "build": "npm run copy-assets && npm run build-ts",
+    "build": "npm run lint && npm run copy-assets && npm run build-ts",
     "copy-assets": "./scripts/copy-assets.sh",
     "watch-ts": "tsc -w",
-    "tslint": "tslint -c tslint.json -p tsconfig.json"
+    "lint": "tslint -c tslint.json -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/rhurkes/rpg-board#readme",
   "dependencies": {},
   "devDependencies": {
+    "tslint": "^5.10.0",
     "typescript": "^2.9.2"
   }
 }
